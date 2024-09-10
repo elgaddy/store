@@ -1,0 +1,30 @@
+@use 'variables';
+@use 'mixins';
+
+.modal-navbar{
+    &-backg{
+        display: none;
+        @include mixins.modal-background;
+    }
+    background-color: variables.$White;
+    width: 250px;
+    height: 100%;
+    padding: 28px 14px; 
+    &-items{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 200px;
+        list-style: none;
+        color: variables.$Very-vark-blue;
+        font-weight: 700;
+        text-decoration: none;
+        margin-top: 50px;
+    }
+}
+.navbar-close:hover{
+    cursor: pointer;
+    content: url('../images/icon-close-orange.svg');
+}
+
+    

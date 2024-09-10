@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <title>store</title>
+
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="main-container">
+  <header class="header">
+    <div class="header_navigation">
+      <img class="header_menu"src="./images/icon-menu.svg" alt="menu">
+      <img class="header_logo"src="./images/logo.svg" alt="logo">
+      <nav class="navbar">
+        <ul class="navbar-items">
+          <li><a class="navbar-link">Collections</a></li>
+          <li><a class="navbar-link">Men</a></li>
+          <li><a class="navbar-link">Women</a></li>
+          <li><a class="navbar-link">About</a></li>
+          <li><a class="navbar-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  <div class="modal-navbar-backg">
+    <nav class="modal-navbar">
+      <img class="navbar-close" src="./images/icon-close-orange.svg" alt="">
+      <ul class="modal-navbar-items">
+        <li><a class="modal-navbar-link"></a>Collections</li>
+        <li><a class="modal-navbar-link"></a>Men</li>
+        <li><a class="modal-navbar-link"></a>Women</li>
+        <li><a class="modal-navbar-link"></a>About</li>
+        <li><a class="modal-navbar-link"></a>Contact</li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <div class="header_cart-avatar">
+    <div class="header_cart">
+      <div class="header_cart-noti">0</div>
+      <img class=""  src="./images/icon-cart black.svg" alt="">
+    </div>
+    <img class="header_avatar"  src="./images/image-avatar.png" alt="">
+  </div>
+  </header>
+
+  <section class="container">
+    <article class="gallery">
+      <div class="gallery-images">
+        <img class="gallery-previous" src="./images/icon-previous.svg" alt="">
+        <img class="gallery-next"src="./images/icon-next.svg" alt="">
+      </div>
+      <div class="gallery-other">
+        <img id="1"class="gallery-thumbnail" src="./images/image-product-1-thumbnail.jpg" alt="">
+        <img id="2"class="gallery-thumbnail" src="./images/image-product-2-thumbnail.jpg" alt="">
+        <img id="3"class="gallery-thumbnail" src="./images/image-product-3-thumbnail.jpg" alt="">
+        <img id="4"class="gallery-thumbnail" src="./images/image-product-4-thumbnail.jpg" alt="">
+      </div>
+    </article>
+    <article class="details">
+      <h2 class="details_company">Sneaker Company </h2>
+      <h2 class="details_title">Nike Air Max Plus Tn</h2>
+      <p class="details_descript">El modelo Nike Air Max Plus TN está fabricado con una combinación de materiales sintéticos y naturales, incluyendo malla y cuero sintético en la parte superior, goma en la suela y espuma en la entresuela. El diseño presenta un sistema de cierre con cordones para asegurar el ajuste del zapato en el pie.</p>
+      <div class="details_prices">
+        <p class="details_now">$125.00 <span class="details_discount">50%</span></p>
+        <p class="details_before">$250.00 </p>
+      </div>
+      <div class="details_product">
+        <div class="input">
+          <img class="input-minus" src="./images/icon-minus.svg" alt="" class="input_minus">
+          <input class="input-number" type="text" value="0">
+          <img class="input-plus"src="./images/icon-plus.svg" alt="" class="input_minus">
+        </div>
+        <button class="details_button"> <img src="./images/icon-cart.svg" alt=""> Add to cart</button>
+      </div>
+  </section>
+</article>
+<div class="cart-modal">
+  <p class="cart-modal-title">Cart</p>
+  <div class="cart-modal_checkout-cont">
+    <div class="cart-modal_det-cont">
+      <img class="cart-modal_img" src="./images/image-product-1-thumbnail.jpg" alt="">
+      <div>
+        <p class="cart-modal_product">Edicion Limitada...</p>
+        <p class="cart-modal_price">$125 x3 <span>375$</span></p>
+      </div>
+      <img class="cart-icon_delete" src="./images/icon-delete.svg" alt="">
+    </div>
+    <button class="cart-modal_button">Checkout</button>
+  </div>
+</div>
+
+</main>
+   <div class="modal-gallery_background">
+  <article class="modal-gallery">
+    <div class="modal-gallery_cont-close">
+      <img class="modal-gallery-close" src="./images/icon-close.svg" alt="">
+    </div>
+    <div class="modal-gallery-images">
+      <img class="modal-gallery-previous" src="./images/icon-previous.svg" alt="">
+      <img class="modal-gallery-next"src="./images/icon-next.svg" alt="">
+    </div>
+    <div class="modal-gallery-other">
+      <img id="1"class="modal-gallery-thumbnail" src="./images/image-product-1-thumbnail.jpg" alt="">
+      <img id="2"class="modal-gallery-thumbnail" src="./images/image-product-2-thumbnail.jpg" alt="">
+      <img id="3"class="modal-gallery-thumbnail" src="./images/image-product-3-thumbnail.jpg" alt="">
+      <img id="4"class="modal-gallery-thumbnail" src="./images/image-product-4-thumbnail.jpg" alt="">
+    </div>
+  </article>
+   </div>
+  
+  <footer class="attribution">
+    Desafio por <a href="https://i.pinimg.com/736x/9b/f3/eb/9bf3eb49b7993617806465d9dd9b61cf.jpg" target="_blank">Java</a>. 
+    Hecho por <a href="#"target="_blank">Gaddiel Orellana</a>.
+  </footer>
+ 
+  <script src="./main.js"></script>
+</body>
+</html>

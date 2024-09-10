@@ -1,0 +1,75 @@
+@use 'variables'as v;
+@use 'mixins';
+.details{
+    padding: 24px;
+    &_company{
+        color: v.$Orange;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 12px;
+    }
+    &_title{
+        font-size: 1.7rem;
+        margin-bottom: 16px;
+    }
+    &_descript{
+        font-size: 1rem;
+        color: v.$Dark-grayish-blue;
+        line-height: 24px;
+        margin-bottom: 24px;
+    }
+    &_prices{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+        align-items: center;
+    }
+    &_now{
+        font-size: 1.8rem;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+    }
+    &_discount{
+        font-size: 0.5rem;
+        background-color: v.$Pale-orange;
+        color: v.$Orange;
+        padding: 4px;
+        border: 4px;
+
+    }
+    &_before{
+        font-weight: 700;
+        color: v.$Dark-grayish-blue;
+        text-decoration: line-through;
+    }
+    &_button{
+        @include mixins.button;
+    }
+
+    @media(min-width:1115px){
+        padding-top: 60px;
+        width: 445px;
+        &_product{
+            display: flex;
+            gap: 32px;
+        }
+        &_title{
+            font-size: 2.7rem;
+            margin-bottom: 55px;
+        }
+        &_descript{
+            font-size: 0.9rem;
+            margin-bottom: 37px;
+        }
+        &_prices{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &_button{
+            margin: auto;
+        }
+    }
+}
